@@ -5,5 +5,11 @@ export default {
     text: '#000000',
     secondary_text: '#9A9A9D',
     background_header: '#FFFFFF'
+  },
+
+  fonts: {
+    regular: 'Roboto_400Regular',
+    medium: 'Roboto_500Medium',
+    bold: 'Roboto_700Bold'
   }
 }
