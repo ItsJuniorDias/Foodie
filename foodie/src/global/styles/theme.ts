@@ -4,7 +4,9 @@ export default {
     background: '#F2F2F2',
     text: '#000000',
     secondary_text: '#9A9A9D',
-    background_header: '#FFFFFF'
+    background_header: '#FFFFFF',
+    text_button: '#F6F6F9',
+    attention: '#e61919',
   },
 
   fonts: {

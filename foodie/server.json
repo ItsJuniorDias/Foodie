@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "email": "juniordias_@live.com",
+      "password": "$2a$10$AUMDotUvss2GGtdGqW5QquR2iNIimOziyXJOKLw8jk5R2bT8UFBW2",
+      "name": "Alexandre Junior",
+      "confirmPassword": "Vestibulinho97",
+      "id": 1
+    }
+  ],
+  "login": []
+}
