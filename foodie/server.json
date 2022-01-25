@@ -6,15 +6,29 @@
       "name": "Alexandre Junior",
       "confirmPassword": "Vestibulinho97",
       "id": 1
+    },
+    {
+      "email": "gabriel@live.com",
+      "password": "$2a$10$7GDpUwAvRJLHrdbqHs6Fdezl4Jh.Wy.xuuTPRu6yPy6VdF1LTDuxq",
+      "name": "Gabriel Scatolin",
+      "confirmPassword": "Vestibulinho97",
+      "id": 2
+    },
+    {
+      "email": "danilo@live.com",
+      "password": "$2a$10$JaV6G8MdErmpXucL68QrF.gSr23lWsAtEaw/L78iih5S7F/vcJWIO",
+      "name": "Danilo Alberto",
+      "confirmPassword": "Vestibulinho97",
+      "id": 3
     }
   ],
   "login": [],
   "products": [
     {
-    "id": 1,
-    "title": "Veggie tomato mix",
-    "price": "24,90",
-    "img_url": "https://user-images.githubusercontent.com/50254416/151025266-ba22f0ac-080a-4096-a24f-ba1eca713c3a.png"
+      "id": 1,
+      "title": "Veggie tomato mix",
+      "price": "24,90",
+      "img_url": "https://user-images.githubusercontent.com/50254416/151025266-ba22f0ac-080a-4096-a24f-ba1eca713c3a.png"
     },
     {
       "id": 2,
@@ -40,5 +54,5 @@
       "price": "22,00",
       "img_url": "https://user-images.githubusercontent.com/50254416/151029690-60af4e54-7906-462b-ba93-7f747f3e7ed0.png"
     }
- ]
+  ]
 }

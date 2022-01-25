@@ -6,7 +6,8 @@ import {
   TouchableWithoutFeedback, 
   Keyboard,
   Alert,
-  StatusBar
+  StatusBar,
+  ActivityIndicator
 } from 'react-native';
 
 import * as Yup from 'yup';
@@ -54,6 +55,8 @@ const Login = ({ navigation }) => {
   const [ password, setPassword ] = useState('');
   const [ confirmPassword, setConfirmPassword ] = useState('');
 
+  const [load, setLoad] = useState(false);
+
   const layout = useWindowDimensions();
 
   const [index, setIndex] = React.useState(0);
@@ -83,16 +86,15 @@ const Login = ({ navigation }) => {
     }
 
     try { 
+      setLoad(true);
       const response = await axios.post('/login', data);
-      console.log(response);
+      setLoad(false);
 
       navigation.navigate('Home');
-      console.log(data);
     } catch(e) {
+      setLoad(false);
       Alert.alert('Erro de autenticação', 'Email ou senha inválidos');
     }
-    
-
   
   }
 
@@ -110,13 +112,18 @@ const Login = ({ navigation }) => {
       name,
       confirmPassword
     }
+
+    try {
+      setLoad(true);
+      const response = await axios.post('/users', data);
+      setLoad(false);
+    } catch(e) {
+      setLoad(false);
+    }
     
-    const response = await axios.post('/users', data);
-    console.log(response, 'Response');
 
     navigation.navigate('Home');
    
-    console.log(data);
    }
   
   const FirstRoute = () => (
@@ -154,7 +161,7 @@ const Login = ({ navigation }) => {
         <PasswordForget>Esqueceu a senha?</PasswordForget>
       </Touchable>
  
-      <Button onPress={handleSubmit(handleLogin)} title="Login"/>
+      <Button loadButton={load} onPress={handleSubmit(handleLogin)} title="Login"/>
     </Content>
   );
   
@@ -208,7 +215,7 @@ const Login = ({ navigation }) => {
       />
 
  
-        <Button onPress={handleRegister} title="Sign-up"/>
+        <Button loadButton={load} onPress={handleRegister} title="Sign-up"/>
     </Content>
   );
 
