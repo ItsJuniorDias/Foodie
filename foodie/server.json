@@ -8,5 +8,37 @@
       "id": 1
     }
   ],
-  "login": []
+  "login": [],
+  "products": [
+    {
+    "id": 1,
+    "title": "Veggie tomato mix",
+    "price": "24,90",
+    "img_url": "https://user-images.githubusercontent.com/50254416/151025266-ba22f0ac-080a-4096-a24f-ba1eca713c3a.png"
+    },
+    {
+      "id": 2,
+      "title": "Egg and cucmber",
+      "price": "29,00",
+      "img_url": "https://user-images.githubusercontent.com/50254416/151026392-86aa10d0-69fe-492d-a2df-9812a1671caf.png"
+    },
+    {
+      "id": 3,
+      "title": "Fried chicken m.",
+      "price": "32,00",
+      "img_url": "https://user-images.githubusercontent.com/50254416/151029012-dcb46b84-a5e3-42e5-a5be-acd897ef09a1.png"
+    },
+    {
+      "id": 4,
+      "title": "Moi-moi and ekpa.",
+      "price": "26,90",
+      "img_url": "https://user-images.githubusercontent.com/50254416/151029465-988d62a5-6b0c-40f7-b0ed-0c36294cea1d.png"
+    },
+    {
+      "id": 5,
+      "title": "Spicy fish sauce",
+      "price": "22,00",
+      "img_url": "https://user-images.githubusercontent.com/50254416/151029690-60af4e54-7906-462b-ba93-7f747f3e7ed0.png"
+    }
+ ]
 }

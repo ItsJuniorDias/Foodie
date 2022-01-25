@@ -5,7 +5,8 @@ import {
   ScrollView, 
   TouchableWithoutFeedback, 
   Keyboard,
-  Alert
+  Alert,
+  StatusBar
 } from 'react-native';
 
 import * as Yup from 'yup';
@@ -241,31 +242,41 @@ const Login = ({ navigation }) => {
   });
 
   return (
-    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <Container> 
-        <ScrollView >
-        <Header> 
-          <LogoContent>
-            <Logo source={logo} />
+    <>
+      <StatusBar
+        barStyle="dark-content"
+        hidden={false}
+        backgroundColor={theme.colors.background_header}
+        translucent={false}
+        networkActivityIndicatorVisible={true}
+      />
 
-          </LogoContent>
+      <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <Container> 
+          <ScrollView showsVerticalScrollIndicator={false}>
+          <Header> 
+            <LogoContent>
+              <Logo source={logo} />
 
-          <ContentTab> 
-            <TabView
-                navigationState={{ index, routes }}
-                renderScene={renderScene}
-                onIndexChange={setIndex}
-                initialLayout={{ width: layout.width }}
-                renderTabBar={renderTabBar}
-              />
-          </ContentTab> 
-        </Header>
-        
-        {!index ? FirstRoute() : SecondRoute()}
+            </LogoContent>
 
-        </ScrollView>
-      </Container>
-    </TouchableWithoutFeedback>
+            <ContentTab> 
+              <TabView
+                  navigationState={{ index, routes }}
+                  renderScene={renderScene}
+                  onIndexChange={setIndex}
+                  initialLayout={{ width: layout.width }}
+                  renderTabBar={renderTabBar}
+                />
+            </ContentTab> 
+          </Header>
+          
+          {!index ? FirstRoute() : SecondRoute()}
+
+          </ScrollView>
+        </Container>
+      </TouchableWithoutFeedback>
+    </>
   );
 }
 

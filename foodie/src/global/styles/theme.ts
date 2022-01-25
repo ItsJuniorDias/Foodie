@@ -7,6 +7,9 @@ export default {
     background_header: '#FFFFFF',
     text_button: '#F6F6F9',
     attention: '#e61919',
+    input_search: '#a4a4b2',
+    input_border: '#EFEEEE',
+    text_opacity: "rgba(0,0,0,0.5)",
   },
 
   fonts: {
