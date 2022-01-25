@@ -20,7 +20,7 @@ $ npm install
 ```
 
 ### Server
-- A aplicação esta consumindo uma api de mocks, utilizando json-server, você rodar o servidor com o seguinte comando: 
+- The application is consuming an api of mocks, using json-server, you run the server with the following command:
 
 ```
 $ yarn server
