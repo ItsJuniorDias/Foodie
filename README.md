@@ -1,6 +1,11 @@
 # 🍔 Foodie
 code challanger
 
+![signIn](https://user-images.githubusercontent.com/50254416/151053638-45f7a516-cf8f-48fc-b6f5-2708ae429ae3.png)
+![signUp](https://user-images.githubusercontent.com/50254416/151053645-2397105a-f2fe-4360-a1ff-b2cd0d2ea48e.png)
+![Home](https://user-images.githubusercontent.com/50254416/151053651-1e150361-7389-4467-9b33-cb50b956d2a0.png)
+![HomeNew](https://user-images.githubusercontent.com/50254416/151053798-a0fbae34-3734-4714-a243-f020efaf005a.png)
+
 ### Tools
 - **Axios** were used for consumption by Api
 - **Styled-component** to work with customizable components
