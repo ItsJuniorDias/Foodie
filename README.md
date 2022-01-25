@@ -14,7 +14,7 @@ code challanger
 
 ```
 $ cd foodie 
-$ yarn 
+$ yarn or npm install
 ```
 
 ### Mobile
