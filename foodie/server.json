@@ -20,6 +20,13 @@
       "name": "Danilo Alberto",
       "confirmPassword": "Vestibulinho97",
       "id": 3
+    },
+    {
+      "email": "meliana@live.com",
+      "password": "$2a$10$vM3wuDuiQig3whDL67Z3s./BCIeUBC/IF0E8GHW7r.Ga5hZE3oBMW",
+      "name": "Meliana de jesus tavares",
+      "confirmPassword": "Vestibulinho97",
+      "id": 4
     }
   ],
   "login": [],

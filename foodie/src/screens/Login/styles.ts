@@ -1,7 +1,6 @@
 import styled from 'styled-components/native';
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
-import { RectButton, TouchableOpacity } from 'react-native-gesture-handler'
 
 export const Container = styled.SafeAreaView`
   flex: 1;

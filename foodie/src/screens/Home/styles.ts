@@ -4,7 +4,6 @@ import styled from 'styled-components/native';
 export const Container = styled.SafeAreaView`
   flex: 1;
   background-color: ${({ theme }) => theme.colors.background};
-  /* margin-top: 25px; */
   padding: 0 32px;
 `;
 
@@ -47,6 +46,5 @@ export const TextTab = styled.Text`
 `;
 
 export const ContentFood = styled.SafeAreaView`
-  /* background-color: ${({ theme }) => theme.colors.primary}; */
   flex: 1;
 `;

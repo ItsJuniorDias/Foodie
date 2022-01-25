@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text } from 'react-native';
+import { Image } from 'react-native';
 
 import { 
   Container,
@@ -9,8 +9,6 @@ import {
   TitleContent,
   Price
 } from './styles';
-
-import veggie from '../../assets/images/veggie.png';
 
 interface Props {
   id: number;

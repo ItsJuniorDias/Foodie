@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { 
-  View, 
   useWindowDimensions, 
   ScrollView, 
   TouchableWithoutFeedback, 
   Keyboard,
   Alert,
   StatusBar,
-  ActivityIndicator
 } from 'react-native';
 
 import * as Yup from 'yup';

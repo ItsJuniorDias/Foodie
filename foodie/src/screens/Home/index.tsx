@@ -9,6 +9,8 @@ import {
    FlatList
   } from 'react-native';
 
+import { Ionicons } from '@expo/vector-icons';
+
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 
 import { 
@@ -23,24 +25,20 @@ import {
 
 import theme from '../../global/styles/theme';
 
-import shopping_cart from '../../assets/images/shopping-cart.png';
 import vector from '../../assets/images/vector.png';
 
 import InputSearch from '../../components/InputSearch';
 import CardProduct from '../../components/CardProduct';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import axios from '../../services/api';
 
-const Home = () => {
+const Home = ({ navigation }) => {
   const [ data, setData ] = useState([]);
 
   useEffect(() => {
     async function loadProducts() {
       const response = await axios.get('/products');
-       
-      console.log(response.data);
-      setData(response.data)
+      setData(response.data);
     }
 
     loadProducts()
@@ -126,8 +124,8 @@ const Home = () => {
                 <Image source={vector} />
               </TouchableOpacity>
               
-              <TouchableOpacity>
-                <Image source={shopping_cart} />
+              <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+                <Ionicons name="exit-outline" size={32} color={theme.colors.text} />
               </TouchableOpacity>
             </ContentHeader>
 
@@ -148,8 +146,6 @@ const Home = () => {
               />
           </Header>
 
-       
-          
           <ContentTabView>
               <TabView
                 navigationState={{ index, routes }}
@@ -159,7 +155,6 @@ const Home = () => {
                 renderTabBar={renderTabBar}
               />
           </ContentTabView>
-
 
            {!index ? FirstRoute() : SecondRoute()}
         </ScrollView>
